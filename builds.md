@@ -28,3 +28,12 @@ Why Nativefy:
 ```
 nativefier "https://desmos.com/calculator" -p windows -n Desmos --portable --disable-context-menu --icon ./icons/desmos.ico --win32metadata '{"CompanyName":"Desmos"}' 
 ```
+
+# GitHub
+
+Why Nativefy:
+* Purely for portable functionality if I want to access releases/secrets of a private repo without having to bother with logins. I don't really think there's much reason to use have it as an app.
+
+## GitHub-main
+```
+nativefier "https://github.com" -p windows -n GitHub --portable --win32metadata '{"CompanyName":"GitHub"}'
