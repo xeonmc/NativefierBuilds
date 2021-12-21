@@ -8,13 +8,13 @@ Why Nativefy:
 ## Discord-main
 
 ```
-nativefier "https://discordapp.com/app" -p windows -n Discord --portable --background-color '#1f2225' --disable-dev-tools --disable-context-menu --icon ./icons/discord.ico --win32metadata '{"CompanyName":"Discord"}' --single-instance --tray
+nativefier "https://discordapp.com/app" -p windows -n Discord --portable --background-color '#2f3136' --disable-dev-tools --disable-context-menu --icon ./icons/discord.ico --win32metadata '{"CompanyName":"Discord"}' --single-instance --tray
 ```
 
 ## Discord-multi
 
 ```
-nativefier 'https://discordapp.com/app' -p windows -n Discord --portable --background-color '#1f2225' --disable-dev-tools --disable-context-menu --icon ./icons/discord.ico --win32metadata '{"CompanyName":"Discord"}'
+nativefier 'https://discordapp.com/app' -p windows -n Discord --portable --background-color '#2f3136' --disable-dev-tools --disable-context-menu --icon ./icons/discord.ico --win32metadata '{"CompanyName":"Discord"}'
 ```
 
 # Desmos 
