@@ -36,4 +36,4 @@ Why Nativefy:
 
 ## GitHub-main
 ```
-nativefier "https://github.com" -p windows -n GitHub --portable --win32metadata '{"CompanyName":"GitHub"}'
+nativefier "https://github.com" -p windows -n GitHub --portable --icon ./icons/github.ico --win32metadata '{"CompanyName":"GitHub"}'
