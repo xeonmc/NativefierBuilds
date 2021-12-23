@@ -46,10 +46,10 @@ Why Nativefy:
 
 ## Reddit-main
 ```
-nativefier "https://old.reddit.com/?geo_filter=GLOBAL" -p windows -n Reddit --portable --icon ./icons/reddit.ico -win32metadata '{"CompanyName":"Reddit"}
+nativefier "https://old.reddit.com/?geo_filter=GLOBAL" -p windows -n Reddit --portable --icon ./icons/reddit.ico -win32metadata '{"CompanyName":"Reddit"}'
 ```
 
 ## Reddit-incognito
 ```
-nativefier "https://old.reddit.com/?geo_filter=GLOBAL" -p windows -n Reddit --portable --icon ./icons/reddit.ico -win32metadata '{"CompanyName":"Reddit"} --clear-cache
+nativefier "https://old.reddit.com/?geo_filter=GLOBAL" -p windows -n Reddit --portable --icon ./icons/reddit.ico -win32metadata '{"CompanyName":"Reddit"}' --clear-cache
 ```
