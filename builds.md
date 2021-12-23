@@ -8,7 +8,7 @@ Why Nativefy:
 ## Discord-main
 
 ```
-nativefier "https://discordapp.com/app" -p windows -n Discord --portable --background-color '#2f3136' --disable-dev-tools --disable-context-menu --icon ./icons/discord.ico --win32metadata '{"CompanyName":"Discord"}' --single-instance --tray
+nativefier 'https://discordapp.com/app' -p windows -n Discord --portable --background-color '#2f3136' --disable-dev-tools --disable-context-menu --icon './icons/discord.ico' --win32metadata '{"CompanyName":"Discord"}' --single-instance --tray
 ```
 
 ## Discord-multi
@@ -26,7 +26,7 @@ Why Nativefy:
 ## Desmos-main
 
 ```
-nativefier "https://desmos.com/calculator" -p windows -n Desmos --portable --disable-context-menu --icon ./icons/desmos.ico --win32metadata '{"CompanyName":"Desmos"}' 
+nativefier 'https://desmos.com/calculator' -p windows -n Desmos --portable --disable-context-menu --icon './icons/desmos.ico' --win32metadata '{"CompanyName":"Desmos"}' 
 ```
 
 # GitHub
@@ -36,7 +36,7 @@ Why Nativefy:
 
 ## GitHub-main
 ```
-nativefier "https://github.com" -p windows -n GitHub --portable --icon ./icons/github.ico --win32metadata '{"CompanyName":"GitHub"}'
+nativefier 'https://github.com' -p windows -n GitHub --portable --icon './icons/github.ico' --win32metadata '{"CompanyName":"GitHub"}'
 ```
 
 # Reddit (old layout)
@@ -46,10 +46,10 @@ Why Nativefy:
 
 ## Reddit-main
 ```
-nativefier "https://old.reddit.com/?geo_filter=GLOBAL" -p windows -n Reddit --portable --icon ./icons/reddit.ico -win32metadata '{"CompanyName":"Reddit"}'
+nativefier 'https://old.reddit.com/?geo_filter=GLOBAL' -p windows -n Reddit --portable --icon './icons/reddit.ico' --win32metadata '{"CompanyName":"Reddit"}'
 ```
 
 ## Reddit-incognito
 ```
-nativefier "https://old.reddit.com/?geo_filter=GLOBAL" -p windows -n Reddit --portable --icon ./icons/reddit.ico -win32metadata '{"CompanyName":"Reddit"}' --clear-cache
+nativefier 'https://old.reddit.com/?geo_filter=GLOBAL' -p windows -n Reddit --portable --icon './icons/reddit.ico' --win32metadata '{"CompanyName":"Reddit"}' --clear-cache
 ```
