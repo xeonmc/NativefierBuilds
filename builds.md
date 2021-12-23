@@ -37,3 +37,19 @@ Why Nativefy:
 ## GitHub-main
 ```
 nativefier "https://github.com" -p windows -n GitHub --portable --icon ./icons/github.ico --win32metadata '{"CompanyName":"GitHub"}'
+```
+
+# Reddit (old layout)
+
+Why Nativefy:
+* The Reddit Progressive Web App uses the new layout, also it auto-detects region unless you're logged in.
+
+## Reddit-main
+```
+nativefier "https://old.reddit.com/?geo_filter=GLOBAL" -p windows -n Reddit --portable --icon ./icons/reddit.ico -win32metadata '{"CompanyName":"Reddit"}
+```
+
+## Reddit-incognito
+```
+nativefier "https://old.reddit.com/?geo_filter=GLOBAL" -p windows -n Reddit --portable --icon ./icons/reddit.ico -win32metadata '{"CompanyName":"Reddit"} --clear-cache
+```
