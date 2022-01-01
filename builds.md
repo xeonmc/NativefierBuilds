@@ -53,3 +53,14 @@ nativefier 'https://old.reddit.com/?geo_filter=GLOBAL' -p windows -n Reddit -m -
 ```
 nativefier 'https://old.reddit.com/?geo_filter=GLOBAL' -p windows -n Reddit -m --portable --icon './icons/reddit.ico' --win32metadata '{"CompanyName":"Reddit"}' --clear-cache
 ```
+
+# Typeracer
+
+Why Navtivefy:
+* The entire website is a single-page app, also the cookies doesn't seem to be persistent unless you log in. Keeping it sandboxed is a no-brainer.
+
+## Typeracer-main
+
+```
+nativefier 'https://play.typeracer.com/' -p windows -n Typeracer --portable --disable-dev-tools --disable-context-menu --icon './icons/typeracer.ico' --win32metadata '{"CompanyName":"Typeracer"} --single-instance
+```
