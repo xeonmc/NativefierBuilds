@@ -62,5 +62,5 @@ Why Navtivefy:
 ## Typeracer-main
 
 ```
-nativefier 'https://play.typeracer.com/' -p windows -n Typeracer --portable --disable-dev-tools --disable-context-menu --icon './icons/typeracer.ico' --win32metadata '{"CompanyName":"Typeracer"} --single-instance
+nativefier 'https://play.typeracer.com/' -p windows -n Typeracer --portable --disable-dev-tools --disable-context-menu --icon './icons/typeracer.ico' --win32metadata '{"CompanyName":"Typeracer"}' --single-instance
 ```
