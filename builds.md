@@ -33,10 +33,10 @@ Why Nativefy:
 ## Desmos-main
 
 ```
-nativefier 'https://desmos.com/calculator' -p windows -n Desmos --portable --disable-context-menu --icon './icons/desmos.ico' --win32metadata '{"CompanyName":"Desmos"}' 
+nativefier 'https://desmos.com/calculator' -p windows -n Desmos --portable --disable-context-menu --icon './icons/desmos.ico' --win32metadata '{"CompanyName":"Desmos"}' --user-agent safari
 
 # building with docker
-docker run --rm -v $PWD/icons/:/src -v $PWD/build/:/target nativefier/nativefier https://desmos.com/calculator -p windows -n Desmos --portable --disable-context-menu --icon '/src/desmos.ico' --win32metadata '{\"CompanyName\":\"Desmos\"}' /target/
+docker run --rm -v $PWD/icons/:/src -v $PWD/build/:/target nativefier/nativefier https://desmos.com/calculator -p windows -n Desmos --portable --disable-context-menu --icon '/src/desmos.ico' --win32metadata '{\"CompanyName\":\"Desmos\"}' --user-agent safari /target/
 ```
 
 # GitHub
