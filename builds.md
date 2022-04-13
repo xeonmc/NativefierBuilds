@@ -11,11 +11,17 @@ Why Nativefy:
 
 ```
 nativefier 'https://discord.com/app' -p windows -n Discord --portable --background-color '#1F2225' --disable-dev-tools --icon './icons/discord.ico' --win32metadata '{"CompanyName":"Discord"}' --single-instance --tray
+
+# building with docker
+docker run --rm -v $PWD/icons/:/src -v $PWD/build/:/target nativefier/nativefier https://discord.com/app -p windows -n Discord --portable --background-color '#1F2225' --disable-dev-tools --icon '/src/discord.ico' --win32metadata '{\"CompanyName\":\"Discord\"}'  --single-instance --tray /target/
 ```
 ## Discord-multi
 
 ```
 nativefier 'https://discord.com/app' -p windows -n Discord --portable --background-color '#1F2225' --disable-dev-tools --icon ./icons/discord.ico --win32metadata '{"CompanyName":"Discord"}'
+
+# building with docker
+docker run --rm -v $PWD/icons/:/src -v $PWD/build/:/target nativefier/nativefier https://discord.com/app -p windows -n Discord --portable --background-color '#1F2225' --disable-dev-tools --icon '/src/discord.ico' --win32metadata '{\"CompanyName\":\"Discord\"}' /target/
 ```
 
 # Desmos 
@@ -28,6 +34,9 @@ Why Nativefy:
 
 ```
 nativefier 'https://desmos.com/calculator' -p windows -n Desmos --portable --disable-context-menu --icon './icons/desmos.ico' --win32metadata '{"CompanyName":"Desmos"}' 
+
+# building with docker
+docker run --rm -v $PWD/icons/:/src -v $PWD/build/:/target nativefier/nativefier https://desmos.com/calculator -p windows -n Desmos --portable --disable-context-menu --icon '/src/desmos.ico' --win32metadata '{\"CompanyName\":\"Desmos\"}' /target/
 ```
 
 # GitHub
@@ -72,7 +81,6 @@ Why Nativefy:
 * website is nicely designed to run in a single tab, rarely any multitab navigation. Making it a standalone app gives you an all-in-one IDE
 
 ```
-# building with local install
 nativefier 'https://replit.com/~' -p windows -n Replit --portable --maximize --disable-dev-tools --icon 'https://replit.com/public/icons/favicon-196.png' --win32metadata '{"CompanyName":"Replit"}'
 
 
