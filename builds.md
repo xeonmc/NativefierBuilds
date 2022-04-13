@@ -72,9 +72,10 @@ Why Nativefy:
 * website is nicely designed to run in a single tab, rarely any multitab navigation. Making it a standalone app gives you an all-in-one IDE
 
 ```
-nativefier 'https://replit.com' -p windows -n Replit --portable --maximize --disable-dev-tools --icon 'https://replit.com/public/icons/favicon-196.png' --win32metadata '{"CompanyName":"Replit"}'
+# building with local install
+nativefier 'https://replit.com/~' -p windows -n Replit --portable --maximize --disable-dev-tools --icon 'https://replit.com/public/icons/favicon-196.png' --win32metadata '{"CompanyName":"Replit"}'
 
 
 # building with docker
-docker run --rm -v $PWD/icons/:/src -v $PWD/build/:/target nativefier/nativefier --icon /src/replit.png --name Replit -p windows https://replit.com /target/
+docker run --rm -v $PWD/icons/:/src -v $PWD/build/:/target nativefier/nativefier https://replit.com/~ -p windows -n Replit --portable --maximize --disable-dev-tools --icon '/src/replit.png' --win32metadata '{\"CompanyName\":\"Replit\"}' /target/
 ```
